@@ -33,6 +33,7 @@ before_install:
     esac  
     bash -x setup.sh
 script:
+  - pkg-config --cflags --libs gtk+-3.0 
   - make
 os:
   - linux
