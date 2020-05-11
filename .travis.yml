@@ -11,7 +11,6 @@ addons:
     - ffmpeg
   homebrew:
     update: true
-    packages: python3
 before_install:
 - |-
     case $TRAVIS_OS_NAME in
