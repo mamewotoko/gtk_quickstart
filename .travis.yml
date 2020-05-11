@@ -39,11 +39,12 @@ script:
       make
       ;;
     osx)
-      echo ls /opt/X11/lib
-      ls /opt/X11/lib
+      echo ls /opt/X11/lib/pkgconfig
+      ls /opt/X11/lib/pkgconfig
       PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig make
       ;;
     windows)
+      pacman -Ql gtk3
       echo ls /mingw64/lib/
       ls /mingw64/lib/
       echo ls /mingw64/lib/pkgconfig/
