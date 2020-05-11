@@ -32,8 +32,8 @@ before_install:
     esac  
     bash -x setup.sh
 script:
-  - pkg-config --cflags --libs gtk+-3.0 
 - |-
+    pkg-config --cflags --libs gtk+-3.0 
     case $TRAVIS_OS_NAME in
     linux)
       make
