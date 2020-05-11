@@ -15,13 +15,10 @@ elif [ -f /etc/redhat-release ] && grep "release 7" /etc/redhat-release; then
 elif [[ "$UNAME" == "MINGW64_NT"* ]]; then
     # msys2 on PC
     pacman -Syu --noconfirm
-    pacman -Sy --noconfirm mingw-w64-x86_64-gtk3 mingw-w64-x86_64-make mingw-w64-x86_64-gcc
+    pacman -Sy --noconfirm gtk3 make gcc
 
 elif [[ "$UNAME" == "MSYS_NT"* ]]; then
     # travis 
     $msys2 pacman -Syu --noconfirm
-    $msys2 pacman -Sy --noconfirm mingw-w64-x86_64-gtk3 \
-           mingw-w64-x86_64-make \
-           mingw-w64-x86_64-gcc \
-           mingw-w64-x86_64-pkg-config
+    $msys2 pacman -Sy --noconfirm gtk3 make gcc pkg-config
 fi
