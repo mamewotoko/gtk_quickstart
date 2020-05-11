@@ -42,6 +42,9 @@ script:
       PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig make
       ;;
     windows)
+      ls /
+      ls /mingw*
+      ls /mingw*/lib/pkgconfig/*
       PKG_CONFIG_PATH=/mingw64/lib/pkgconfig make
       ;;
     esac
