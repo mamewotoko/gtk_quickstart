@@ -3,7 +3,8 @@
 
 if [ "$UNAME" = Darwin ]; then
     brew update
-    brew install gtk+3 pkg-config make gcc
+    brew install gtk+3 
+    # make gcc pkg-config
 
 elif [ -f /etc/lsb-release ]; then
     sudo apt-get update
