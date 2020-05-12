@@ -40,11 +40,9 @@ script:
       ;;
     osx)
       pkg-config --variable pc_path pkg-config
-      echo ls /usr/local/lib/pkgconfig
-      ls /usr/local/lib/pkgconfig
-      find / usr -name pkgconfig
+      find /usr -name gtk+-3.0.pc
       brew ls -v gtk+-3
-      PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ gmake
+      PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ make
       ;;
     windows)
       # MSYS
