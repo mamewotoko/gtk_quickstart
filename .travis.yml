@@ -39,12 +39,14 @@ script:
       make
       ;;
     osx)
-      echo ls /opt/X11/lib/pkgconfig
-      ls /opt/X11/lib/pkgconfig
-      PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig make
+      PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ make
       ;;
     windows)
       MAKE=mingw32-make
+      echo ls /
+      ls /
+      echo ls /mingw64/lib/pkgconfig
+      ls /mingw64/lib/pkgconfig
       PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ${MAKE}
       ;;
     esac
