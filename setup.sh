@@ -1,4 +1,6 @@
 #! /bin/bash
+UNAME=$(uname)
+
 if [ "$UNAME" = Darwin ]; then
     brew update
     brew install gtk+3 pkg-config make gcc
