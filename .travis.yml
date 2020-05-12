@@ -44,7 +44,7 @@ script:
       ls /usr/local/lib/pkgconfig
       find / usr -name pkgconfig
       brew ls -v gtk+-3
-      PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ make
+      PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ gmake
       ;;
     windows)
       # MSYS
