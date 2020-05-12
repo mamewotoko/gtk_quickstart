@@ -48,7 +48,7 @@ script:
       ;;
     windows)
       # MSYS
-      $msys2 bash build.sh
+      $msys2 bash -x build.sh
       ;;
     esac
 os:
