@@ -44,12 +44,8 @@ script:
       PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig make
       ;;
     windows)
-      pacman -Ql gtk3
-      echo ls /mingw64/lib/
-      ls /mingw64/lib/
-      echo ls /mingw64/lib/pkgconfig/
-      ls /mingw64/lib/pkgconfig/
-      PKG_CONFIG_PATH=/mingw64/lib/pkgconfig make
+      MAKE=mingw32-make
+      PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ${MAKE}
       ;;
     esac
 os:
