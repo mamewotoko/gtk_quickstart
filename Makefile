@@ -2,7 +2,7 @@
 CC = gcc
 SRC_DIR = src
 OBJ_DIR = target
-CFLAGS = $(shell pkg-config --cflags gtk+-3.0)
+CFLAGS = $(shell pkg-config --cflags gtk+-3.0) -Wall
 LDFLAGS = $(shell pkg-config --libs gtk+-3.0)
 EXE = mini
 
