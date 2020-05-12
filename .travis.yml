@@ -39,15 +39,19 @@ script:
       make
       ;;
     osx)
+      pkg-config --variable pc_path pkg-config
       echo ls /usr/local/lib/pkgconfig
       ls /usr/local/lib/pkgconfig
+      brew ls -v gtk+-3
       PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ make
       ;;
     windows)
       MAKE=mingw32-make
       echo $msys
       $msys2 ls /
-      $msys2 PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ${MAKE}
+      $msys2 ls /mingw64/lib
+      $msys2 pkg-config --variable pc_path pkg-config
+      $msys2 "PKG_CONFIG_PATH=/mingw64/lib/pkgconfig" ${MAKE}
       ;;
     esac
 os:
