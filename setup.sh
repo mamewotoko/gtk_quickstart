@@ -3,7 +3,7 @@
 
 if [ "$UNAME" = Darwin ]; then
     brew update
-    brew install gtk+3 
+    brew install gtk+3
     # make gcc pkg-config
 
 elif [ -f /etc/lsb-release ]; then
@@ -20,11 +20,11 @@ elif [[ "$UNAME" == "MINGW64_NT"* ]]; then
     pacman -Syu --noconfirm
     pacman -Sy --noconfirm mingw-w64-x86_64-gtk3 \
            mingw-w64-x86_64-make \
-           mingw-w64-x86_64-gcc
+           mingw-w64-x86_64-gcc \
            mingw-w64-x86_64-pkg-config
 
 elif [[ "$UNAME" == "MSYS_NT"* ]]; then
-    # travis 
+    # travis
     $msys2 pacman -Syu --noconfirm
     $msys2 pacman -Sy --noconfirm mingw-w64-x86_64-gtk3 \
            mingw-w64-x86_64-make \
