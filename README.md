@@ -1,4 +1,6 @@
-GTK quickstart (WIP)
+GTK quickstart
+[![Build Status](https://travis-ci.com/mamewotoko/gtk_quickstart.svg?branch=master)](https://travis-ci.com/mamewotoko/gtk_quickstart)
+<!-- TODO: replace to instanciated project -->
 ====================
 
 Prepare
@@ -26,5 +28,5 @@ Run
 ```
 
 ----
-Takashi Masuyama < mamewotoko@gmail.com >  
+Takashi Masuyama < mamewotoko@gmail.com >
 http://mamewo.ddo.jp/
