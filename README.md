@@ -1,7 +1,5 @@
-GTK quickstart
-[![Build Status](https://travis-ci.com/mamewotoko/gtk_quickstart.svg?branch=master)](https://travis-ci.com/mamewotoko/gtk_quickstart)
-<!-- TODO: replace URL with the URL of new repository -->
-====================
+GTK quickstart [![Build Status](https://travis-ci.com/mamewotoko/gtk_quickstart.svg?branch=master)](https://travis-ci.com/mamewotoko/gtk_quickstart)
+=====================================================
 
 Prepare
 -------
