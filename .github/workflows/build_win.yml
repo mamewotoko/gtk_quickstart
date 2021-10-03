@@ -12,8 +12,7 @@ jobs:
       run: |
         ./setup.sh
         export PKG_CONFIG_PATH="/mingw64/lib/pkgconfig:$PKG_CONFIG"
-        # debug
-        find /
-        make
+        # ... msys make
+        mingw32-make
         # check
         ls -l mini
