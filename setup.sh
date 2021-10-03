@@ -1,6 +1,8 @@
 #! /bin/bash
 . ./env.sh
 
+echo "system uname" $UNAME
+
 if [ "$UNAME" = Darwin ]; then
     brew update
     brew install --build-from-source gtk+3
