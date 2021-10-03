@@ -11,7 +11,7 @@ jobs:
     - shell: msys {0}
       run: |
         ./setup.sh
-        PKG_CONFIG_PATH="/mingw64/lib/pkgconfig:$PKG_CONFIG"
+        export PKG_CONFIG_PATH="/mingw64/lib/pkgconfig:$PKG_CONFIG"
         make
         # check
         ls -l mini
