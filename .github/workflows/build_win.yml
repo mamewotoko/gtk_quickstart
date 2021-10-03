@@ -7,10 +7,11 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - name: build gtk app
+    - uses: msys2/setup-msys2@v2
+    - shell: msys {0}
       run: |
         ./setup.sh
-        $ENV:PKG_CONFIG_PATH += ";/mingw64/lib/pkgconfig"
+        PKG_CONFIG_PATH="/mingw64/lib/pkgconfig:$PKG_CONFIG"
         make
         # check
         ls -l mini
