@@ -1,4 +1,5 @@
 #! /bin/bash
+set -ex
 . ./env.sh
 
 echo "system uname" $UNAME
