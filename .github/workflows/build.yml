@@ -13,7 +13,3 @@ jobs:
         make
         # check
         ls -l mini
-      env:
-        OCAML_VERSION: 4.11
-        TRAVIS_OS_NAME: linux
-        TRAVIS_DIST: focal

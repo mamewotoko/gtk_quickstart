@@ -7,13 +7,10 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - name: build lablgtk
+    - name: build gtk app
       run: |
         ./setup.sh
+        export PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:$PKG_CONFIG_PATH
         make
         # check
         ls -l mini
-      env:
-        OCAML_VERSION: 4.11
-        TRAVIS_OS_NAME: linux
-        TRAVIS_DIST: focal

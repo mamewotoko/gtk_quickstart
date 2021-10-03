@@ -7,13 +7,9 @@ jobs:
     runs-on: osx
     steps:
     - uses: actions/checkout@v2
-    - name: build lablgtk
+    - name: build gtk app
       run: |
         ./setup.sh
         make
         # check
         ls -l mini
-      env:
-        OCAML_VERSION: 4.11
-        TRAVIS_OS_NAME: linux
-        TRAVIS_DIST: focal
