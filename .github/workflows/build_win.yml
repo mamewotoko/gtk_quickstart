@@ -10,7 +10,6 @@ jobs:
     - name: build gtk app
       run: |
         ./setup.sh
-        export PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:$PKG_CONFIG_PATH
-        make
+        PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:$PKG_CONFIG_PATH make
         # check
         ls -l mini
