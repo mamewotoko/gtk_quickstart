@@ -1,4 +1,4 @@
-GTK quickstart [![Build Status](https://travis-ci.com/mamewotoko/gtk_quickstart.svg?branch=master)](https://travis-ci.com/mamewotoko/gtk_quickstart)
+GTK quickstart [![build on ubuntu](https://github.com/mamewotoko/gtk_quickstart/actions/workflows/build.yml/badge.svg)](https://github.com/mamewotoko/gtk_quickstart/actions/workflows/build.yml) [![build on windows10](https://github.com/mamewotoko/gtk_quickstart/actions/workflows/build_win.yml/badge.svg)](https://github.com/mamewotoko/gtk_quickstart/actions/workflows/build_win.yml) [![build on mac](https://github.com/mamewotoko/gtk_quickstart/actions/workflows/build_mac.yml/badge.svg)](https://github.com/mamewotoko/gtk_quickstart/actions/workflows/build_mac.yml)
 =====================================================
 
 Prepare
