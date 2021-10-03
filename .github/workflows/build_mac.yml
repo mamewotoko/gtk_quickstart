@@ -1,0 +1,19 @@
+name: build on mac
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: osx
+    steps:
+    - uses: actions/checkout@v2
+    - name: build lablgtk
+      run: |
+        ./setup.sh
+        make
+        # check
+        ls -l gtk_app
+      env:
+        OCAML_VERSION: 4.11
+        TRAVIS_OS_NAME: linux
+        TRAVIS_DIST: focal
